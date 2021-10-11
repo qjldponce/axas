@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InquirypostFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/exerciseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:scaleY="1.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/conmtenta" />
+
+        <TextView
+            android:id="@+id/post_inquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="103dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="193dp"
+            android:textColor="@color/black"
+            android:text="Post your Inquiry"
+            android:fontFamily="sans-serif-black"
+            android:textSize="30dp"
+            android:shadowColor="#0F0F0F"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="10"
+            app:layout_constraintEnd_toEndOf="@id/titleConstraint"
+            app:layout_constraintStart_toStartOf="@id/titleConstraint"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Name"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/post_inquiry"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/inquiry"
+            android:layout_width="279dp"
+            android:layout_height="184dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:textColor="@color/black"
+            android:hint="Type your inquiry here"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="30dp"
+            android:text="Submit"
+            app:layout_constraintStart_toStartOf="@id/titleConstraint"
+            app:layout_constraintTop_toBottomOf="@+id/inquiry" />
+
+        <Button
+            android:id="@+id/read_inquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="123dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="30dp"
+            android:text="Read an Inquiry"
+            app:layout_constraintStart_toStartOf="@id/titleConstraint"
+            app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
